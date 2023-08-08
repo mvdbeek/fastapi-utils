@@ -2,10 +2,11 @@ from __future__ import annotations
 
 import inspect
 from collections.abc import Callable
-from typing import Any, ClassVar, TypeVar, get_origin, get_type_hints
+from typing import Any, ClassVar, TypeVar
 
 from fastapi import APIRouter, Depends
 from starlette.routing import Route, WebSocketRoute
+from typing_extensions import get_origin, get_type_hints
 
 T = TypeVar("T")
 
